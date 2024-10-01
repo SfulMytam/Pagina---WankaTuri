@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WankaTuri</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="Fis.png">
+</head>
+<body>
+    <img src="Hy.jpg" alt="wenas"
+    width="400" 
+     height="300">
+    <div class="header">
+        <div href="#">WankaTuri</div>
+    </div>
+    <div class="button-container">
+        <div class="row">
+            <div class="Boton">
+                <a href="TuriCatarata.html">Cataratas</a>
+            </div>
+            <div class="Boton">
+                <a href="CentrosRecre.html">Centros Recreativos</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="Boton">
+                <a href="Otros.html">Otros Lugares</a>
+            </div>
+            <div>
+                <a onclick="irAPaginaAleatoria()">Ir a Página Aleatoria</a>
+            </div>
+            
+            <script>
+                function irAPaginaAleatoria() {
+                
+                    const paginas = [
+                        'TuriCatarata.html', 
+                        'CentrosRecre.html',
+                        'Otros.html',
+                    ];
+            
+                    
+                    const paginaAleatoria = paginas[Math.floor(Math.random() * paginas.length)];
+
+                    window.location.href = paginaAleatoria;
+                }
+            </script>
+        </div>
+        
+    
+</body>
+</html>
